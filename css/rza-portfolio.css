@@ -38,3 +38,7 @@
 	width: 24px;
 	background: url(../img/echelon-sprite-24.png) no-repeat 0 0;
 }
+
+.lead-bottom-margin {
+	margin-bottom: 0px;
+}
