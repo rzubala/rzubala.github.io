@@ -42,3 +42,9 @@
 .lead-bottom-margin {
 	margin-bottom: 0px;
 }
+
+.rza-section {
+	padding-top: 1px;
+	padding-bottom: 1px;
+	margin-bottom: 20px; 
+}
