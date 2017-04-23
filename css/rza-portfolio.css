@@ -1,20 +1,20 @@
 .header {
-	background: url(../img/rza1.jpg) no-repeat center center scroll;
+	background: url(../img/rza3.jpg) no-repeat center center scroll;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
 }
 
-.text-vertical-top {
+.text-vertical-bottom {
 	display: table-cell;
 	text-align: center;
-	vertical-align: top;
+	vertical-align: bottom;
+	padding-bottom: 3%;
 }
 
-.text-vertical-top h1 {
+.text-vertical-bottom h1 {
 	margin: 0;
-	padding-top: 10px;
 	font-size: 4.5em;
 	font-weight: 700;
 }
