@@ -9,26 +9,52 @@ win.resize(function() {
         $bg    = $("#bg");
 
 	console.log('background: ' + win_w+' '+win_h);
-	/*
-	$(".header").removeClass("header_mobile");
-	if (win_w < 600) {
-		$(".header").addClass("header_mobile");
-	}
-	*/
 
 	var img_w = 600;
 	var img_top = 0;
-	if (img_w > win_w + 10) {
-		img_w = win_w;
+
+	if (win_w < 500) {
+		$(".rza-name-1").css('font-size', 50);
+		$(".rza-name-2").css('font-size', 30);
+	} else {
+		$(".rza-name-1").css('font-size', 80);
+		$(".rza-name-2").css('font-size', 50);
+	}	
+
+	var name_left = 100;	
+	var name_width = $(".rza-name").width();
+	
+	if (win_w < 1000) {
 		img_top = 10;	
+	}		
+	if (img_w > win_w) {
+		img_w = win_w;			
 	}
+	
 	var img_left = win_w - (img_w + 100);
 	if (img_left < 0) {
 		img_left = 0;
 	}
-	var img_bottom = 0;
+	
+	if (img_top > 0) {
+		var tmp = win_w - img_w;
+		img_left = tmp / 2;
+		
+		if (name_width > 0){
+			tmp = win_w - name_width;
+			if (tmp > 0) {
+				name_left = tmp / 2;	
+			}
+		}
+	}		
+	
+	
+	
+	var img_bottom = 0;	
+	var name_bottom = 100;
 	
 	$(".headimg").width(img_w);
+	$(".headimg").css('left', img_left);	
 	if (img_top > 0) {
 		$(".headimg").css('bottom', '');
 		$(".headimg").css('top', img_top);
@@ -37,10 +63,9 @@ win.resize(function() {
 		$(".headimg").css('top', '');
 	}
 	
-	$(".headimg").css('left', img_left);
-
-	$(".headimg").css('z-index', 1);
-	$(".rza-construction").css('z-index', 100);
+	$(".rza-name").css('left', name_left);
+	$(".rza-name").css('bottom', name_bottom);
+	
   }).resize();
   
 })(jQuery);

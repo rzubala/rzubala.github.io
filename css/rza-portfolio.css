@@ -7,8 +7,31 @@
 }
 
 .headimg {
-	width: 50%;
 	position: absolute;
+}
+
+.rza-name {
+	position: absolute;
+}
+
+.rza-name-1 {
+	color: rgb(255, 255, 255);
+}
+
+.rza-name-2 {
+	color: rgb(188, 230, 90);
+}
+
+.rza-name-3 {
+	color: rgb(255, 255, 255);
+	font-size: 30px;
+}
+
+.rza-name-2-bracket {
+	font-size:80px;
+	color:rgb(255,255,255);
+	position: relative;
+	top: 10px;
 }
 
 .text-vertical-bottom {
