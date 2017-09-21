@@ -9,49 +9,38 @@ win.resize(function() {
         $bg    = $("#bg");
 
 	console.log('background: ' + win_w+' '+win_h);
+	/*
 	$(".header").removeClass("header_mobile");
 	if (win_w < 600) {
 		$(".header").addClass("header_mobile");
 	}
+	*/
 
-/*
-    // Load narrowest background image based on 
-    // viewport width, but never load anything narrower 
-    // that what's already loaded if anything.
-    var available = [
-      1024, 1280, 1366,
-      1400, 1680, 1920,
-      2560, 3840, 4860
-    ];
+	var img_w = 600;
+	var img_top = 0;
+	if (img_w > win_w + 10) {
+		img_w = win_w;
+		img_top = 10;	
+	}
+	var img_left = win_w - (img_w + 100);
+	if (img_left < 0) {
+		img_left = 0;
+	}
+	var img_bottom = 0;
+	
+	$(".headimg").width(img_w);
+	if (img_top > 0) {
+		$(".headimg").css('bottom', '');
+		$(".headimg").css('top', img_top);
+	} else {
+		$(".headimg").css('bottom', img_bottom);
+		$(".headimg").css('top', '');
+	}
+	
+	$(".headimg").css('left', img_left);
 
-    var current = $bg.attr('src').match(/([0-9]+)/) ? RegExp.$1 : null;
-    
-    if (!current || ((current < win_w) && (current < available[available.length - 1]))) {
-      
-      var chosen = available[available.length - 1];
-      
-      for (var i=0; i<available.length; i++) {
-        if (available[i] >= win_w) {
-          chosen = available[i];
-          break;
-        }
-      }
-      
-      // Set the new image
-      $bg.attr('src', '/img/bg/' + chosen + '.jpg');
-      
-      // for testing...
-      // console.log('Chosen background: ' + chosen);
-      
-    }
-
-    // Determine whether width or height should be 100%
-    if ((win_w / win_h) < ($bg.width() / $bg.height())) {
-      $bg.css({height: '100%', width: 'auto'});
-    } else {
-      $bg.css({width: '100%', height: 'auto'});
-    }
-*/  
+	$(".headimg").css('z-index', 1);
+	$(".rza-construction").css('z-index', 100);
   }).resize();
   
 })(jQuery);

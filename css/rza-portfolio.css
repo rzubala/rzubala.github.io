@@ -1,13 +1,14 @@
 .header {
-	background: url(../img/rza4.png) no-repeat center center scroll;
+	background: url(../img/rza-bg.png) no-repeat center center scroll;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
 }
 
-.header_mobile {
-	background: url(../img/rza5.png) no-repeat center center scroll;
+.headimg {
+	width: 50%;
+	position: absolute;
 }
 
 .text-vertical-bottom {
@@ -55,6 +56,11 @@
 
 .a-bold {
 	font-weight: bold;
+}
+
+.rza-on-top {
+    position: relative;
+    z-index: 101;
 }
 
 .rza-construction {
