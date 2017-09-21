@@ -1,9 +1,13 @@
 .header {
-	background: url(../img/rza3.jpg) no-repeat center center scroll;
+	background: url(../img/rza4.png) no-repeat center center scroll;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
+}
+
+.header_mobile {
+	background: url(../img/rza5.png) no-repeat center center scroll;
 }
 
 .text-vertical-bottom {
