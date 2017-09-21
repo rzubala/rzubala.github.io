@@ -5,12 +5,12 @@ var win = $(window);
 win.resize(function() {
     
     var win_w = win.width(),
-        win_h = win.height(),
-        $bg    = $("#bg");
+        win_h = win.height();
 
 	console.log('background: ' + win_w+' '+win_h);
 
 	var img_w = 800;
+	var logo_width = 175;
 	var img_top = 0;
 	var logo_visible = true;
 
@@ -31,7 +31,7 @@ win.resize(function() {
 		img_top = 10;	
 	}		
 	if (img_w > win_w) {
-		img_w = win_w;			
+		img_w = win_w - 40;			
 	}
 	
 	var img_left = win_w - (img_w + 100);
@@ -51,6 +51,7 @@ win.resize(function() {
 		}
 		
 		logo_visible = false;
+		logo_width = 0;
 	}		
 		
 	var img_bottom = 0;	
@@ -71,6 +72,7 @@ win.resize(function() {
 	
 	$(".logoimg").css('left', logo_left);
 	$(".logoimg").css('top', logo_top);
+	$(".logoimg").width(logo_width);
 
 	if (logo_visible) {
 		$(".logoimg").css('visibility', '');

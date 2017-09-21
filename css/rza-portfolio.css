@@ -12,6 +12,7 @@
 
 .logoimg {
 	position: absolute;
+	z-index: 2;
 }
 
 .rza-name {
@@ -87,12 +88,15 @@
 
 .rza-on-top {
     position: relative;
-    z-index: 101 !important;
+    z-index: 10 !important;
 }
 
 .rza-construction {
     color: #a0a0a0;
     margin-top: 1px;
     margin-bottom: 1px;
+}
+
+.rza-menu-toggle {
 }
 
