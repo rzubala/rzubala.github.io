@@ -10,8 +10,9 @@ win.resize(function() {
 
 	console.log('background: ' + win_w+' '+win_h);
 
-	var img_w = 600;
+	var img_w = 800;
 	var img_top = 0;
+	var logo_visible = true;
 
 	if (win_w < 500) {
 		$(".rza-name-1").css('font-size', 50);
@@ -21,6 +22,8 @@ win.resize(function() {
 		$(".rza-name-2").css('font-size', 50);
 	}	
 
+	var logo_left = 150;
+	var logo_top = 150;
 	var name_left = 100;	
 	var name_width = $(".rza-name").width();
 	
@@ -46,10 +49,10 @@ win.resize(function() {
 				name_left = tmp / 2;	
 			}
 		}
+		
+		logo_visible = false;
 	}		
-	
-	
-	
+		
 	var img_bottom = 0;	
 	var name_bottom = 100;
 	
@@ -66,6 +69,15 @@ win.resize(function() {
 	$(".rza-name").css('left', name_left);
 	$(".rza-name").css('bottom', name_bottom);
 	
+	$(".logoimg").css('left', logo_left);
+	$(".logoimg").css('top', logo_top);
+
+	if (logo_visible) {
+		$(".logoimg").css('visibility', '');
+	} else {
+		$(".logoimg").css('visibility', 'hidden');
+	}
+
   }).resize();
   
 })(jQuery);
