@@ -60,7 +60,7 @@
 
 .rza-on-top {
     position: relative;
-    z-index: 101;
+    z-index: 101 !important;
 }
 
 .rza-construction {
