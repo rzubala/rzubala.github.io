@@ -45,9 +45,12 @@ win.resize(function() {
 		$(".headimg").css('height', 'auto');
 	}
 	
+	var skip_left = false;
 	var img_left = win_w - (img_w + 100);
 	if (img_left < 0) {
 		img_left = 0;
+	} else if (img_left == win_w - 100) {
+		skip_left = true;	
 	}
 	
 	if (win_h < 530) {
@@ -76,7 +79,14 @@ win.resize(function() {
 	var img_bottom = 0;	
 	var name_bottom = 100;
 	
-	$(".headimg").css('left', img_left);	
+	if (skip_left) {
+		$(".headimg").css('left', 'auto');
+		$(".headimg").css('right', 100);
+	} else {
+		$(".headimg").css('left', img_left);
+		$(".headimg").css('right', 'auto');
+	}
+		
 	if (img_top > 0) {
 		$(".headimg").css('bottom', '');
 		$(".headimg").css('top', img_top);
