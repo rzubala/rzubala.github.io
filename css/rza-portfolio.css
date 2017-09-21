@@ -8,6 +8,8 @@
 
 .headimg {
 	position: absolute;
+	width: 862px;
+	height: 814px;
 }
 
 .logoimg {
@@ -98,5 +100,8 @@
 }
 
 .rza-menu-toggle {
+}
+
+.education {	
 }
 

@@ -7,9 +7,10 @@ win.resize(function() {
     var win_w = win.width(),
         win_h = win.height();
 
-	console.log('background: ' + win_w+' '+win_h);
+	var set_height = false;
+	var img_h = 814;
+	var img_w = 862;
 
-	var img_w = 800;
 	var logo_width = 175;
 	var img_top = 0;
 	var logo_visible = true;
@@ -27,11 +28,21 @@ win.resize(function() {
 	var name_left = 100;	
 	var name_width = $(".rza-name").width();
 	
-	if (win_w < 1000) {
-		img_top = 10;	
-	}		
+	if (img_h > win_h) {
+		img_h = win_h - 10;
+		set_height = true;
+		$(".headimg").css('width', 'auto');
+		$(".headimg").height(img_h);
+		img_w = $(".headimg").width();
+	} else {
+		$(".headimg").width(img_w);
+		$(".headimg").css('height', 'auto');
+	}
+		
 	if (img_w > win_w) {
 		img_w = win_w - 40;			
+		$(".headimg").width(img_w);
+		$(".headimg").css('height', 'auto');
 	}
 	
 	var img_left = win_w - (img_w + 100);
@@ -39,7 +50,15 @@ win.resize(function() {
 		img_left = 0;
 	}
 	
-	if (img_top > 0) {
+	if (win_h < 530) {
+		logo_visible = false;
+	} else if (win_h < 700) {
+		logo_top = 10;
+	}
+	
+	if (win_w < 1000) {
+		img_top = 10;	
+
 		var tmp = win_w - img_w;
 		img_left = tmp / 2;
 		
@@ -57,7 +76,6 @@ win.resize(function() {
 	var img_bottom = 0;	
 	var name_bottom = 100;
 	
-	$(".headimg").width(img_w);
 	$(".headimg").css('left', img_left);	
 	if (img_top > 0) {
 		$(".headimg").css('bottom', '');
