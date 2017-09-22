@@ -8,8 +8,8 @@ win.resize(function() {
         win_h = win.height();
 
 	var set_height = false;
-	var img_h = 814;
-	var img_w = 862;
+	var img_h = 882;
+	var img_w = 829;
 
 	var logo_width = 175;
 	var img_top = 0;
