@@ -99,9 +99,10 @@
     margin-bottom: 1px;
 }
 
-.rza-menu-toggle {
+.about-rza {
+	padding-bottom: 20px !important;
 }
 
-.education {	
+.rza-about-first {
+	padding-top: 5px;
 }
-
