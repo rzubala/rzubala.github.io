@@ -1,15 +1,20 @@
 (function() {
 
-var win = $(window);
+ 	var win = $(window);
+	win.resize(function() {
+   	initElements(win);
+  	}).resize();
+ 
+})(jQuery);
 
-win.resize(function() {
-    
-    var win_w = win.width(),
-        win_h = win.height();
+function initElements(win) {
+	var win_w = win.width(),
+   		win_h = win.height();
 
 	var set_height = false;
-	var img_h = 882;
-	var img_w = 829;
+	
+	var img_h = 814;
+	var img_w = 862;
 
 	var logo_width = 175;
 	var img_top = 0;
@@ -33,7 +38,7 @@ win.resize(function() {
 		set_height = true;
 		$(".headimg").css('width', 'auto');
 		$(".headimg").height(img_h);
-		img_w = $(".headimg").width();
+		img_w = img_h * 862 / 814;
 	} else {
 		$(".headimg").width(img_w);
 		$(".headimg").css('height', 'auto');
@@ -108,6 +113,4 @@ win.resize(function() {
 		$(".logoimg").css('visibility', 'hidden');
 	}
 
-  }).resize();
-  
-})(jQuery);
+}
