@@ -89,6 +89,14 @@
 	font-weight: bold;
 }
 
+.a-white {
+	color: rgb(100, 255, 255);
+}
+
+.rza-white a.rza-a:hover {
+	color: rgb(155, 155, 155);
+}
+
 .rza-on-top {
     position: relative;
     z-index: 10 !important;
@@ -116,4 +124,12 @@
 .rza-large-bracket {
 	font-size:80px;
 	color: rgb(188, 230, 90);
+}
+
+.rza-section-background {
+	background: url(../img/rza-bg.png) repeat;
+}
+
+.rza-white {
+	color: rgb(255, 255, 255);
 }
