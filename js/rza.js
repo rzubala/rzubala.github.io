@@ -20,12 +20,55 @@ function initElements(win) {
 	var img_top = 0;
 	var logo_visible = true;
 
+	var name_to_default = true;
+
 	if (win_w < 500) {
 		$(".rza-name-1").css('font-size', 50);
 		$(".rza-name-2").css('font-size', 30);
-	} else {
+		$(".rza-name-3").css('font-size', 20);
+		$(".rza-name-2-bracket").css('font-size', 30);
+		$(".rza-name-2-bracket").css('top', 0);
+		
+		name_to_default = false;
+	}
+
+	var name_bottom = 100;
+	
+	if (win_h < 400) {
+		$(".rza-name-1").css('font-size', 30);
+		$(".rza-name-2").css('font-size', 20);
+		$(".rza-name-3").css('font-size', 20);
+		$(".rza-name-2-bracket").css('font-size', 20);
+		$(".rza-name-2-bracket").css('top', 0);
+		name_bottom = 50;
+		
+		name_to_default = false;		
+	}	else if (win_h < 600) {
+		$(".rza-name-1").css('font-size', 35);
+		$(".rza-name-2").css('font-size', 25);
+		$(".rza-name-3").css('font-size', 25);
+		$(".rza-name-2-bracket").css('font-size', 30);
+		$(".rza-name-2-bracket").css('top', 0);
+		name_bottom = 60;
+		
+		name_to_default = false;
+	}	else if (win_h < 800) {
+		$(".rza-name-1").css('font-size', 40);
+		$(".rza-name-2").css('font-size', 30);
+		$(".rza-name-3").css('font-size', 30);
+		$(".rza-name-2-bracket").css('font-size', 50);
+		$(".rza-name-2-bracket").css('top', 5);
+		name_bottom = 70;
+		
+		name_to_default = false;		
+	}
+		
+	if (name_to_default) {
 		$(".rza-name-1").css('font-size', 80);
 		$(".rza-name-2").css('font-size', 50);
+		$(".rza-name-3").css('font-size', 30);
+		$(".rza-name-2-bracket").css('font-size', 80);
+		$(".rza-name-2-bracket").css('top', 10);
 	}	
 
 	var logo_left = 150;
@@ -81,8 +124,7 @@ function initElements(win) {
 		logo_width = 0;
 	}		
 		
-	var img_bottom = 0;	
-	var name_bottom = 100;
+	var img_bottom = 0;
 	
 	if (skip_left) {
 		$(".headimg").css('left', 'auto');
