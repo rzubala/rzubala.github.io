@@ -157,5 +157,9 @@
 }
 
 .rza-find-bracket {
-		font-size: 50px;
+	font-size: 50px;
+}
+
+.rza-icon-li {
+	margin-bottom: 15px;
 }
