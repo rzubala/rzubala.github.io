@@ -1,7 +1,7 @@
 {
-  "main.css": "/yaris/static/css/main.204980d1.chunk.css",
-  "main.js": "/yaris/static/js/main.fdfb0d89.chunk.js",
-  "main.js.map": "/yaris/static/js/main.fdfb0d89.chunk.js.map",
+  "main.css": "/yaris/static/css/main.87cd7582.chunk.css",
+  "main.js": "/yaris/static/js/main.f045aa72.chunk.js",
+  "main.js.map": "/yaris/static/js/main.f045aa72.chunk.js.map",
   "static/css/1.373bb500.chunk.css": "/yaris/static/css/1.373bb500.chunk.css",
   "static/js/1.b07ee0c0.chunk.js": "/yaris/static/js/1.b07ee0c0.chunk.js",
   "static/js/1.b07ee0c0.chunk.js.map": "/yaris/static/js/1.b07ee0c0.chunk.js.map",
@@ -12,9 +12,9 @@
   "static/media/20190115_114008.jpg": "/yaris/static/media/20190115_114008.7217224a.jpg",
   "static/media/20190115_114020.jpg": "/yaris/static/media/20190115_114020.f16dacd8.jpg",
   "static/media/20190114_113311.jpg": "/yaris/static/media/20190114_113311.ef742195.jpg",
+  "static/css/main.87cd7582.chunk.css.map": "/yaris/static/css/main.87cd7582.chunk.css.map",
   "static/css/1.373bb500.chunk.css.map": "/yaris/static/css/1.373bb500.chunk.css.map",
-  "static/css/main.204980d1.chunk.css.map": "/yaris/static/css/main.204980d1.chunk.css.map",
   "index.html": "/yaris/index.html",
-  "precache-manifest.662d5c02167bc4cbea4a1ffeddfee693.js": "/yaris/precache-manifest.662d5c02167bc4cbea4a1ffeddfee693.js",
+  "precache-manifest.00ec38a1128ed5c861c8cc73a88d866c.js": "/yaris/precache-manifest.00ec38a1128ed5c861c8cc73a88d866c.js",
   "service-worker.js": "/yaris/service-worker.js"
 }

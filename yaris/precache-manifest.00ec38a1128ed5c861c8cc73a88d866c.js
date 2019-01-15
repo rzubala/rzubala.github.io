@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/yaris/static/media/20190114_113258.43c0736a.jpg"
   },
   {
-    "revision": "fdfb0d89622f349a039d",
-    "url": "/yaris/static/css/main.204980d1.chunk.css"
+    "revision": "f045aa72a9e68059169e",
+    "url": "/yaris/static/css/main.87cd7582.chunk.css"
   },
   {
     "revision": "f16dacd8b44d74a3d3ed106a8155b667",
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/yaris/static/js/runtime~main.543e09b2.js"
   },
   {
-    "revision": "fdfb0d89622f349a039d",
-    "url": "/yaris/static/js/main.fdfb0d89.chunk.js"
+    "revision": "f045aa72a9e68059169e",
+    "url": "/yaris/static/js/main.f045aa72.chunk.js"
   },
   {
     "revision": "ef74219599653e25a3881939d9c7e986",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/yaris/static/css/1.373bb500.chunk.css"
   },
   {
-    "revision": "23de29da22a90574f4261c43cfa94eec",
+    "revision": "af4760bd3ed20a83fe476e7702777a1b",
     "url": "/yaris/index.html"
   }
 ];
