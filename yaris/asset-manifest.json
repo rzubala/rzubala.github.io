@@ -1,7 +1,7 @@
 {
   "main.css": "/yaris/static/css/main.87cd7582.chunk.css",
-  "main.js": "/yaris/static/js/main.f045aa72.chunk.js",
-  "main.js.map": "/yaris/static/js/main.f045aa72.chunk.js.map",
+  "main.js": "/yaris/static/js/main.819dc0c5.chunk.js",
+  "main.js.map": "/yaris/static/js/main.819dc0c5.chunk.js.map",
   "static/css/1.373bb500.chunk.css": "/yaris/static/css/1.373bb500.chunk.css",
   "static/js/1.b07ee0c0.chunk.js": "/yaris/static/js/1.b07ee0c0.chunk.js",
   "static/js/1.b07ee0c0.chunk.js.map": "/yaris/static/js/1.b07ee0c0.chunk.js.map",
@@ -15,6 +15,6 @@
   "static/css/main.87cd7582.chunk.css.map": "/yaris/static/css/main.87cd7582.chunk.css.map",
   "static/css/1.373bb500.chunk.css.map": "/yaris/static/css/1.373bb500.chunk.css.map",
   "index.html": "/yaris/index.html",
-  "precache-manifest.00ec38a1128ed5c861c8cc73a88d866c.js": "/yaris/precache-manifest.00ec38a1128ed5c861c8cc73a88d866c.js",
+  "precache-manifest.e6a59a06a8c8584cf2f5d98ca8152152.js": "/yaris/precache-manifest.e6a59a06a8c8584cf2f5d98ca8152152.js",
   "service-worker.js": "/yaris/service-worker.js"
 }
