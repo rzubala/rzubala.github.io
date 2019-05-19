@@ -13,8 +13,8 @@ function initElements(win) {
 
 	var set_height = false;
 	
-	var img_h = 814;
-	var img_w = 862;
+	var img_h = 1330;
+	var img_w = 1502;
 
 	var logo_width = 175;
 	var img_top = 0;
@@ -77,11 +77,11 @@ function initElements(win) {
 	var name_width = $(".rza-name").width();
 	
 	if (img_h > win_h) {
-		img_h = win_h - 10;
+		img_h = win_h - 60;
 		set_height = true;
 		$(".headimg").css('width', 'auto');
 		$(".headimg").height(img_h);
-		img_w = img_h * 862 / 814;
+		img_w = img_h * 1502 / 1330;
 	} else {
 		$(".headimg").width(img_w);
 		$(".headimg").css('height', 'auto');
