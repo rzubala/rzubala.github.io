@@ -77,7 +77,7 @@ function initElements(win) {
 	var name_width = $(".rza-name").width();
 	
 	if (img_h > win_h) {
-		img_h = win_h - 150;
+		img_h = win_h - 200;
 		set_height = true;
 		$(".headimg").css('width', 'auto');
 		$(".headimg").height(img_h);
