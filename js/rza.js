@@ -11,10 +11,9 @@ function initElements(win) {
 	var win_w = win.width(),
    		win_h = win.height();
 
-	var set_height = false;
-	
-	var img_h = 1330;
-	var img_w = 1502;
+	var img_h = 703;
+	var img_w = 812;
+	var ratio = img_w/img_h;
 
 	var logo_width = 175;
 	var img_top = 0;
@@ -81,7 +80,7 @@ function initElements(win) {
 		set_height = true;
 		$(".headimg").css('width', 'auto');
 		$(".headimg").height(img_h);
-		img_w = img_h * 1502 / 1330;
+		img_w = img_h * ratio;
 	} else {
 		$(".headimg").width(img_w);
 		$(".headimg").css('height', 'auto');
