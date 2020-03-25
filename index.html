@@ -318,7 +318,7 @@ That was my first ever commercial software project. I worked as a trainee for Th
 					<ul class="lead fa-ul text-left">
 						<li><i class="fa-li fa fa-square rza-green"></i><b>Glucose</b>: Android application
 						<br>
-                        An application which stores the daily measurements of blood glucose levels in Google Spreadsheet. Application is being developed in <b>Kotlin</b> with Fragments and uses <b>Model-View-ViewModel</b> pattern. The source code can be found on this <a class="rza-a a-bold a-white" target="_blank" href="https://github.com/rzubala/glucose">github repo</a>. <br>The list of missing features to be implemented before the Google Play publication: <a class="rza-a a-white" target="_blank" href="https://github.com/rzubala/glucose/issues/1">missing issues</a>.                  
+                        An application which stores the daily measurements of blood glucose levels in Google Spreadsheet. Application is being developed in <b>Kotlin</b> with Fragments and uses <b>Model-View-ViewModel</b> pattern and has the following <a href="#" class="rza-a a-white" data-toggle="modal" data-target="#glucoseModal">screens</a>. The source code can be found on this <a class="rza-a a-bold a-white" target="_blank" href="https://github.com/rzubala/glucose">github repo</a>. <br>The list of missing features to be implemented before the Google Play publication: <a class="rza-a a-white" target="_blank" href="https://github.com/rzubala/glucose/issues/1">missing issues</a>.                  
 						</li>
 						<br>
                     </ul>
@@ -330,7 +330,7 @@ That was my first ever commercial software project. I worked as a trainee for Th
 					<ul class="lead fa-ul text-left">
 						<li><i class="fa-li fa fa-square rza-green"></i><b>Raspberry Radio</b>: Android application and Node.js REST Server
 						<br>
-                        A simple application which controls the Raspberry Pi radio (run as a <a class="rza-a a-white" target="_blank" href="https://www.musicpd.org/">Music Player Daemon</a>). The REST server written in <b>Node.js</b> serves as a communication layer between application and the radio. Android native application is written in <b>Kotlin</b> and uses <b>Model-View-ViewModel</b> pattern. An alternative <a href="#" class="rza-a a-white" data-toggle="modal" data-target="#myModal">client version</a> has also been created in <b>React-Native</b>. The source code can be found on this <a class="rza-a a-bold a-white" target="_blank" href="https://github.com/rzubala/radio-pi">github repo</a>.
+                        A simple application which controls the Raspberry Pi radio (run as a <a class="rza-a a-white" target="_blank" href="https://www.musicpd.org/">Music Player Daemon</a>). The REST server written in <b>Node.js</b> serves as a communication layer between application and the radio. An Android prototype application is written in <b>Kotlin</b> and uses <b>Model-View-ViewModel</b> pattern but the final version has been created in <b>React-Native</b> and has the following <a href="#" class="rza-a a-white" data-toggle="modal" data-target="#radioModal">screens</a>. The source code can be found on this <a class="rza-a a-bold a-white" target="_blank" href="https://github.com/rzubala/radio-pi">github repo</a>.
 						</li>
 						<br>
                     </ul>
@@ -436,16 +436,6 @@ That was my first ever commercial software project. I worked as a trainee for Th
 
         <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
         
-    <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <img src="img/radio-pi.png" class="img-responsive">
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -467,6 +457,26 @@ That was my first ever commercial software project. I worked as a trainee for Th
   ga('send', 'pageview');
 
 </script>
+
+<div id="radioModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="radioModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="img/radio-pi.png" class="img-responsive">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="glucoseModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="glucoseModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="img/glucose.png" class="img-responsive">
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 
