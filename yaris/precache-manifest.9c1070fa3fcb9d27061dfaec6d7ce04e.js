@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "a0b6ea4a5c30ef90f70a",
+    "revision": "9aae71c1fb422b04c202",
     "url": "/yaris/static/css/main.0de06156.chunk.css"
   },
   {
-    "revision": "a0b6ea4a5c30ef90f70a",
-    "url": "/yaris/static/js/main.a0b6ea4a.chunk.js"
+    "revision": "9aae71c1fb422b04c202",
+    "url": "/yaris/static/js/main.9aae71c1.chunk.js"
   },
   {
     "revision": "0287e279e48fe9b6d4cf",
@@ -80,7 +80,7 @@ self.__precacheManifest = [
     "url": "/yaris/static/media/IMG_20200820_093824.b5dc0d62.jpg"
   },
   {
-    "revision": "f206240bb1c597681fdee25a5918302c",
+    "revision": "c272cf6b1d293b5687512a666d7c678a",
     "url": "/yaris/index.html"
   }
 ];
