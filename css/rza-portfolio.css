@@ -8,8 +8,18 @@
 
 .headimg {
 	position: absolute;
-	width: 862px;
-	height: 814px;
+	left: 50%;
+	bottom: 0px;
+	width: auto;
+    height: 90vh;
+}
+
+@media screen and (max-width: 1300px) {
+	.headimg {
+		top: 55%;
+		left: 50%;
+		transform: translate(-50%, -50%);	  
+	}
 }
 
 .logoimg {

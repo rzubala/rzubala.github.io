@@ -88,23 +88,6 @@ function initElements(win) {
 	var name_left = 100;	
 	var name_width = $(".rza-name").width();
 	
-	if (img_h > win_h) {
-		img_h = win_h - 200;
-		set_height = true;
-		$(".headimg").css('width', 'auto');
-		$(".headimg").height(img_h);
-		img_w = img_h * ratio;
-	} else {
-		$(".headimg").width(img_w);
-		$(".headimg").css('height', 'auto');
-	}
-		
-	if (img_w > win_w) {
-		img_w = win_w - 40;			
-		$(".headimg").width(img_w);
-		$(".headimg").css('height', 'auto');
-	}
-	
 	var skip_left = false;
 	var img_left = win_w - (img_w + 100);
 	if (img_left < 0) {
@@ -136,24 +119,6 @@ function initElements(win) {
 		logo_width = 0;
 	}		
 		
-	var img_bottom = 0;
-	
-	if (skip_left) {
-		$(".headimg").css('left', 'auto');
-		$(".headimg").css('right', 100);
-	} else {
-		$(".headimg").css('left', img_left);
-		$(".headimg").css('right', 'auto');
-	}
-		
-	if (img_top > 0) {
-		$(".headimg").css('bottom', '');
-		$(".headimg").css('top', img_top);
-	} else {
-		$(".headimg").css('bottom', img_bottom);
-		$(".headimg").css('top', '');
-	}
-	
 	$(".rza-name").css('left', name_left);
 	$(".rza-name").css('bottom', name_bottom);
 	
